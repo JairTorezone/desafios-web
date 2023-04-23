@@ -46,7 +46,12 @@
             <td align="center">
             <a href="#"><img width="300px" src="JOGO-COBRINHA/.github/snakes.JPG" /></a></td>
         </tr>
-    
+       <tr>
+            <td>02</td>
+            <td><a href="https://github.com/JairTorezone/coletanea-projetos-js/tree/main/PING-PONG">Pig-Pong</a></td>
+            <td>13/03/23 à 30/04/20</td>
+            <td align="center"><a href="#"><img width="300px" src="PING-PONG/.github/ping-pong.PNG" /></a></td>
+        </tr>
         
       
     </tbody>
