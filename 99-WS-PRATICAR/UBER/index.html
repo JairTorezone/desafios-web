@@ -12,12 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Card Uber</title>
+    <title>Uber</title>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
-    <!--CARD-->
-    <div class="card flex">
+    <div class="container flex">
       <div class="card-drag"></div>
 
       <!--header-->
@@ -26,26 +25,28 @@
         <p>Chega em 3 minutos (800 metros)</p>
       </div>
 
-      <!--CARD BODY-->
+      <!--card body-->
       <div class="card-body flex">
-        <!--LEFT-->
+        <!--card body left-->
         <div class="left flex">
-          <!--DRIVER-->
+          <!--drive-->
           <div class="driver flex">
             <div class="driver-avatar">
               <img
-                src="https://github.com/JairTorezone.png"
-                alt="Image do Jair"
+                src="https:github.com/JairTorezone.png"
+                alt="Jair Torezone"
               />
             </div>
-            <!--avatar-->
-            <div class="driver-stars flex">
-              <div class="star"><i class="ph-light ph-star"></i></div>
-              <strong>5.0</strong>
+
+            <div class="driver-star flex">
+              <i class="ph-light ph-star"></i>
+              <span>5.0</span>
             </div>
-            <!--Name-->
-            <div class="driver-name">Jair T.</div>
+
+            <driver class="driver-name"> Jair T. </driver>
           </div>
+
+          <!--car purple-->
           <div class="driver-car-img">
             <img
               src="https://i.ibb.co/BTN0jQn/car-Purple.png"
@@ -53,35 +54,38 @@
             />
           </div>
         </div>
-        <!--CARD-RIGHT-->
-        <div class="card-body-right">
-          <div class="car-plate">
+
+        <!--right-->
+        <div class="card-driver-right">
+          <div class="plate">
             <h1>BCD0D19</h1>
           </div>
-          <div class="car-model">
+          <div class="model">
             <p>Honda Civic Roxo</p>
           </div>
         </div>
       </div>
 
-      <!--card footer-->
-      <div class="card-footer flex">
-        <div class="input-wrapper flex">
-          <label for="message">Enviar mensagem para Jair...</label>
+      <!--footer-->
+      <div class="card-footer">
+        <div class="footer-input">
+          <label for="message"></label>
           <input
             type="text"
             id="message"
-            placeholder="Enviar mensagem para Jair..."
+            name="message"
+            placeholder="Enviar mensagem para Boris..."
           />
         </div>
         <!--icones-->
         <div class="phone">
           <i class="ph-light ph-phone"></i>
         </div>
-        <div class="shield">
+        <div class="shild">
           <i class="ph-light ph-shield-plus"></i>
         </div>
       </div>
+      <!--FIM CONTAINER-->
     </div>
   </body>
 </html>
