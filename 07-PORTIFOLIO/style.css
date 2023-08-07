@@ -1,0 +1,345 @@
+/***************sylte global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --hue: 245;
+  --body-bg-color: hsl(var(--hue), 14%, 15%);
+  --text-color: hsl(249, 15%, 56%);
+  --bg-cards: hsl(244, 13%, 21%);
+  --bg-techs: hsl(327, 35%, 68%);
+}
+/***************sylte geral */
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--body-bg-color);
+}
+.container {
+  padding: 40px 0px 20px;
+  max-width: 35rem;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-areas:
+    "section"
+    "main"
+    "footer";
+}
+
+h1 {
+  color: var(--text-color);
+
+  margin-top: 3rem;
+
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin: 3rem 2rem;
+}
+
+/*************** Section sylte - profile */
+section {
+  grid-area: section;
+}
+.cards,
+.wrapper {
+  display: grid;
+  gap: 30px;
+}
+
+.card {
+  max-width: 32.8rem;
+  background-color: var(--bg-cards);
+  border-radius: 2rem;
+
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.cards .card:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3.2rem 0 5rem;
+}
+
+.card .images img {
+  max-width: 10.8rem;
+  max-width: 10.8rem;
+  border-radius: 50%;
+
+  border: 2px solid #0f0;
+}
+
+/******** Section syles - location - icons*/
+.cards .card:nth-child(2) {
+  padding: 3.4rem 4rem;
+}
+
+.cards .card .icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.cards .card .icons .icon {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.cards .card .icons .icon p {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cards .card .icons .icon p:hover {
+  color: #acacf0;
+}
+
+/******** Section syles - techs*/
+.card .techs {
+  display: grid;
+  grid-template-columns: repeat(3, 88px);
+
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+
+  padding: 0 2rem;
+}
+
+.card .techs .tech button {
+  background-color: var(--bg-techs);
+  padding: 7px 0;
+
+  border-radius: 3rem;
+  border: 0;
+  width: 8rem;
+
+  cursor: pointer;
+
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  transition: all 300ms ease-in;
+}
+
+.card .techs .tech button:hover {
+  background-color: #ea86bd;
+  transform: scale(1.1);
+}
+/********Section - syles experiences and education*/
+.card:nth-child(4) h2 {
+  margin: 3rem 2rem 2rem;
+}
+.card ul {
+  padding: 0rem 4rem 3rem;
+  font-size: 1.2rem;
+  gap: 10px;
+
+  margin: 0;
+  display: grid;
+}
+.card ul li {
+  font-weight: 400;
+}
+.card ul li span {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+/***************************main syles -  */
+main {
+  grid-area: main;
+  margin-top: 3rem;
+}
+
+.wrapper .card h2 {
+  padding: 18px 30px;
+  margin: 0;
+}
+/***** Main boxs*/
+.boxs {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.boxs .card {
+  padding: 3rem;
+}
+.boxs .card .icons .icon {
+  display: flex;
+  gap: 1.6rem;
+}
+.boxs .card .icons .icon img,
+.like img {
+  width: 2rem;
+  height: 2rem;
+}
+.boxs .card > p {
+  margin: 2rem 0 2rem;
+}
+.boxs-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.boxs-bottom .likes {
+  display: flex;
+  gap: 1.6rem;
+}
+.boxs-bottom .likes .like,
+.techjs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.boxs-bottom .techjs img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+/******* profile techsss*/
+main .card:nth-child(4) {
+  padding: 3.1rem 3rem 4rem;
+}
+main .card:nth-child(4) .images {
+  text-align: center;
+}
+main .card .images img {
+  border: 0;
+}
+.profile-description {
+  margin-top: 2rem;
+}
+.profile-description p {
+  font-size: 1rem;
+}
+.profile-description p:first-child {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-bottom: 1rem;
+}
+.profile-description span,
+.profile-description nav ul li {
+  font-size: 9px;
+}
+.profile-description nav ul {
+  display: flex;
+  padding: 0;
+}
+.profile-description nav ul li {
+  list-style: none;
+}
+
+/***************************footer syles -  */
+footer {
+  grid-area: footer;
+
+  text-align: center;
+  padding: 2rem;
+}
+
+/** >>>>>> Responsividade desktop <<<<<<< **/
+@media (min-width: 1100px) {
+  .container {
+    max-width: 1240px;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content;
+
+    grid-template-areas:
+      "section main"
+      "section footer";
+
+    padding: 4rem;
+  }
+  main {
+    margin: 0;
+    padding: 0;
+    margin-left: 6rem;
+  }
+  main .wrapper {
+    width: 100%;
+  }
+
+  main .wrapper .card {
+    max-width: 100%;
+  }
+
+  main .wrapper .boxs {
+    flex-direction: row;
+  }
+  .boxs .card {
+    flex: 1;
+  }
+  main .wrapper .boxs .fz-16 {
+    font-size: 1.4rem;
+  }
+  main .wrapper .boxs p {
+    font-size: 1.1rem;
+  }
+  /******Main techs*/
+  main .card:nth-child(4) {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+  }
+  main .card:nth-child(4) .images {
+    text-align: justify;
+  }
+  .profile-description {
+    margin: 0;
+  }
+  .profile-description p {
+    font-size: 1.2rem;
+  }
+  .profile-description p:first-child {
+    font-size: 1.6rem;
+  }
+
+  .profile-description span,
+  .profile-description nav ul li {
+    font-size: 1.1rem;
+  }
+}
+/*************************************************************************/
