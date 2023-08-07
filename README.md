@@ -99,7 +99,7 @@
             <td><a href="#">Portifólio</a></td>
             <td>05/08/2023</td>
             <td>html, css</td>
-            <td align="center"><a href="#"><img width="300px" src="07-PORTIFOLIO/.github/capa.jpg" /></a></td>
+            <td align="center"><a href="#"><img width="300px" src="07-PORTIFOLIO/.github/capa.JPG" /></a></td>
         </tr>
     </tbody>
 </table></p>
