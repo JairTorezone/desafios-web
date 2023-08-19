@@ -24,6 +24,12 @@ Aplicação feita com html, css e javascript para desenvolver a lógica, a manip
   <img alt="gameAdivinhação" src="./images/B02.JPG" width="80%">
 </p>
 
+<p align="center">
+  <video width="470" height="300"  controls="controls" autoplay="autoplay">
+      <source src="./videos/bsorte.mp4" type="video/mp4" />
+    </video>
+</p>
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
