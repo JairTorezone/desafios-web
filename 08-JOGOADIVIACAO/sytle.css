@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+:root {
+  font-size: 62.5%;
+
+  --bg-color-primary: linear-gradient(135deg, #c2e9fb 0%, #a1c4fd 100%);
+  --bg-color-secondary: #fff;
+  --bg-color-cardOne: #dce2e9;
+  --bg-color-cardTwo: #7879f1;
+}
+body {
+  font-size: 1.6rem;
+  background: var(--bg-color-primary);
+
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+button {
+  color: #fff;
+  background: var(--bg-color-cardTwo);
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+button:hover {
+  background: #6363ce;
+}
+main {
+  width: min(42.8rem 90%);
+
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+  background-color: var(--bg-color-secondary);
+
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+h1,
+p {
+  color: #34355b;
+}
+p {
+  margin-top: 1.6rem;
+  opacity: 0.8;
+}
+form {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+input,
+button {
+  border: none;
+  padding: 1.6rem;
+}
+
+input {
+  border-radius: 4px 0px 0px 4px;
+  background: var(--bg-color-cardOne);
+  color: #34355b;
+  width: 5rem;
+}
+/*Esconder as setinhas do input type number*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+/* screen2*/
+h2 {
+  color: #34355b;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  margin-bottom: 3.3rem;
+}

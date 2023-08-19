@@ -101,5 +101,12 @@
             <td>html, css</td>
             <td align="center"><a href="#"><img width="300px" src="07-PORTIFOLIO/.github/capa.JPG" /></a></td>
         </tr>
+          <tr>
+            <td>08</td>
+            <td><a href="#">Jogo de adivinhação</a></td>
+            <td>15/08/2023</td>
+            <td>html, css e javascript</td>
+            <td align="center"><a href="#"><img width="300px" src="08-JOGOADIVIACAO/.github/capa.JPG" /></a></td>
+        </tr>
     </tbody>
 </table></p>
