@@ -108,5 +108,12 @@
             <td>html, css e javascript</td>
             <td align="center"><a href="#"><img width="300px" src="08-JOGOADIVIACAO/.github/capa.jpg" /></a></td>
         </tr>
+          <tr>
+            <td>09</td>
+            <td><a href="#">Biscoito da sorte</a></td>
+            <td>19/08/2023</td>
+            <td>html, css e javascript</td>
+            <td align="center"><a href="#"><img width="300px" src="09-BISCOITOSORTE/.github/capa.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
