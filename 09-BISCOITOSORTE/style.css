@@ -60,6 +60,10 @@ button:hover {
 }
 .box {
   max-width: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hide {
@@ -75,15 +79,15 @@ button:hover {
   border-radius: 5px;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
 }
-.card {
-  margin: 1.7rem 0 7rem;
-}
+
 .card p {
   font-family: "Dancing Script", cursive;
   font-size: 2.4rem;
   padding: 1rem;
   background-color: var(--bg-color-sort);
   box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+
+  animation: smallText 1.5s ease-in-out;
 }
 
 /***>> Animation*/
@@ -101,27 +105,35 @@ button:hover {
 
 /****>>>>> Animation Card*/
 .card {
-  -webkit-animation: slide-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  margin: 1.7rem 0 7rem;
+  animation: slide-top 3s ease;
 }
 
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
 @keyframes slide-top {
   0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
+    /* -webkit-transform: translateY(100px); */
+    transform: translateY(90px);
+    width: 9.3rem;
+    height: fit-content;
+
+    font-size: 0.5rem;
+
+    margin: 0 auto;
+  }
+  50% {
+    width: 70%;
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    /* -webkit-transform: translateY(0); */
+    transform: translateY(0px);
+    margin: 0 auto;
+  }
+}
+@keyframes smallText {
+  0% {
+    font-size: 0.5rem;
+  }
+  100% {
+    font-size: 2.4rem;
   }
 }
