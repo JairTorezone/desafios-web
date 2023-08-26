@@ -115,5 +115,12 @@
             <td>html, css e javascript</td>
             <td align="center"><a href="#"><img width="300px" src="09-BISCOITOSORTE/.github/capa.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="#">Calculadora IMC</a></td>
+            <td>25/08/2023</td>
+            <td>html, css e javascript, DOM</td>
+            <td align="center"><a href="#"><img width="300px" src="10-CALCULADORAIMC/.github/capa.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
