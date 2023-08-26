@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --bg-color-primary: #040924;
+    --bg-color-secondary: #fff;
+    --bg-color-error:#F03E3E;
+    --bg-color-inpput: #DCE2E9;
+    --bg-color-button: #02799D;
+    --bg-color-button-hover: #2183a1;
+
+    --text-color-title: #0C3440;
+    --text-color-label: #00453A;
+    --text-color-white: #fff;
+    --text-color-placehold: rgba(73, 80, 87, 0.50);
+
+    --tt-border: #02799D;
+}
+
+body{
+    font-size: 1.6rem;
+    background: var(--bg-color-primary);
+}
+body, button{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.title{
+    color: var(--text-color-title);
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+label{
+    color: var(--text-color-label);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+input{
+    width: 100%;
+    background-color: var(--bg-color-inpput);
+
+    margin-top: .8rem;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+
+    border: 1px solid var(--tt-border);
+    border-radius: 4px;
+
+    /* outline: 1px solid var(--tt-border); */
+
+}
+input::placeholder{
+    color: var(--text-color-placehold);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+button{
+    width: 100%;
+    background-color: var(--bg-color-button);
+    color: var(--text-color-white);
+
+    padding: 1.6rem;
+
+    border: none;
+    border-radius: .4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+
+    cursor: pointer;   
+
+}
+
+button:hover{
+    background-color: var(--bg-color-button-hover);
+}
+
+.container{
+    height: 100vh;
+
+    display: grid;
+    place-content: center;
+}
+.container .card{
+    max-width: 42.8rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+    background-color: var(--bg-color-secondary);
+
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
+}
+
+form{
+  width: 30rem;
+}
+
+form h1{
+    margin-bottom: 3.2rem;
+}
+.input-wrapper{
+    display: grid;
+}
+.input-wrapper + .input-wrapper{
+    margin-top: 1.6rem;
+
+}
+
+button{
+    margin-top: 3.2rem;
+}
