@@ -134,3 +134,21 @@ button.fire svg:nth-child(1) path:last-child {
   fill: #ffffff;
 }
 
+/********* syle responsive*/
+@media (max-width: 890px) {
+    main {
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    html {
+      background-color: var(--bg-color-primary);
+    }
+    #wrapper-icons button svg {
+      width: 13rem;
+      height: 13rem;
+    }
+  }
+  
