@@ -33,6 +33,7 @@ inputHeight.oninput = () => {
   AlertError.close();
 };
 
+/**................................................. */
 function displayResultMessage(result) {
   const message = `Seu IMC é de ${result}`;
 
