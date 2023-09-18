@@ -1,0 +1,154 @@
+/***** style global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --hue: 240;
+  --bg-color-primary: #fff;
+  --bg-color-secondary: #323238;
+  --text-color-primary: #323238;
+  --text-color-secondary: #fff;
+
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+
+  height: 100vh;
+  font-family: sans-serif;
+
+}
+.flex {
+  display: flex;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    font-size: 4.8rem;
+    line-height: 0;
+  }
+  
+/***** style toggle-mode*/
+#toggle-mode {
+  position: absolute;
+  right: 3.2rem;
+  top: 3.2rem;
+}
+#toggle-mode button {
+  font-size: 3.2rem;
+}
+
+html.dark .ph-moon,
+html:not(.dark) .ph-sun,
+html.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+  color: var(--text-color-primary);
+  display: none;
+}
+
+html.dark {
+  background-color: var(--bg-color-secondary);
+  color: var(--text-color-secondary);
+}
+html.dark #controls button,
+html.dark .ph-sun {
+  color: var(--text-color-secondary);
+}
+
+/***** style main*/
+
+main {
+  gap: 19.2rem;
+}
+
+/***** style whapper-timer*/
+.wrapper-timer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+#timer {
+  font-size: 12.6rem;
+}
+#controls {
+  gap: 4rem;
+}
+
+/***** style wrapper-icons*/
+#wrapper-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+#wrapper-icons svg {
+  cursor: pointer;
+}
+/*** class svg*/
+/*tree*/
+button.tree svg:nth-child(1) path:first-child {
+  fill: #008000;
+}
+button.tree svg:nth-child(1) path:last-child {
+  fill: #ffffff;
+}
+
+/*rain*/
+button.rain svg:nth-child(1) path:first-child {
+  fill: #e1e1e6;
+}
+button.rain svg:nth-child(1) path:last-child {
+  fill: #323238;
+}
+/*wind*/
+button.wind svg:nth-child(1) path:first-child {
+  fill: #3d37f6fc;
+}
+button.wind svg:nth-child(1) path:last-child {
+  fill: #ffffff;
+}
+
+/*fire*/
+button.fire svg:nth-child(1) path:first-child {
+  fill: red;
+}
+button.fire svg:nth-child(1) path:last-child {
+  fill: #ffffff;
+}
+
+/********* syle responsive*/
+@media (max-width: 890px) {
+    main {
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    html {
+      background-color: var(--bg-color-primary);
+    }
+    #wrapper-icons button svg {
+      width: 13rem;
+      height: 13rem;
+    }
+  }
+  
