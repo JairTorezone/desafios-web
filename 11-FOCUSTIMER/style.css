@@ -33,19 +33,20 @@ body {
 
   height: 100vh;
   font-family: sans-serif;
-
 }
 .flex {
   display: flex;
 }
 
 button {
-    background-color: transparent;
-    border: 0;
-    font-size: 4.8rem;
-    line-height: 0;
-  }
-  
+  background-color: transparent;
+  border: 0;
+  font-size: 4.8rem;
+  line-height: 0;
+
+  cursor: pointer;
+}
+
 /***** style toggle-mode*/
 #toggle-mode {
   position: absolute;
@@ -83,8 +84,8 @@ main {
 .wrapper-timer {
   display: flex;
   flex-direction: column;
-
   align-items: center;
+  justify-content: center;
 }
 #timer {
   font-size: 12.6rem;
@@ -118,11 +119,11 @@ button.rain svg:nth-child(1) path:first-child {
 button.rain svg:nth-child(1) path:last-child {
   fill: #323238;
 }
-/*wind*/
-button.wind svg:nth-child(1) path:first-child {
+/*coffe*/
+button.coffe svg:nth-child(1) path:first-child {
   fill: #3d37f6fc;
 }
-button.wind svg:nth-child(1) path:last-child {
+button.coffe svg:nth-child(1) path:last-child {
   fill: #ffffff;
 }
 
@@ -136,19 +137,18 @@ button.fire svg:nth-child(1) path:last-child {
 
 /********* syle responsive*/
 @media (max-width: 890px) {
-    main {
-      flex-direction: column;
-      gap: 5rem;
-    }
+  main {
+    flex-direction: column;
+    gap: 5rem;
   }
-  
-  @media (max-width: 576px) {
-    html {
-      background-color: var(--bg-color-primary);
-    }
-    #wrapper-icons button svg {
-      width: 13rem;
-      height: 13rem;
-    }
+}
+
+@media (max-width: 576px) {
+  html {
+    background-color: var(--bg-color-primary);
   }
-  
+  #wrapper-icons button svg {
+    width: 13rem;
+    height: 13rem;
+  }
+}
