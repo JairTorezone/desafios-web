@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-br" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,13 +7,19 @@
     <title>Pomodoro -FocusTimer</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script type="module" src="./src/main.js" defer></script>
   </head>
 
   <body>
     <section id="toggle-mode">
+      <button>
+        <i class="ph-bold ph-moon"></i>
+      </button>
+      <button>
+        <i class="ph-bold ph-sun"></i>
+      </button>
       <span class="sr-only">Ativar light mode</span>
-      <button class="ph ph-moon"></button>
-      <button class="ph ph-sun"></button>
     </section>
 
     <main id="app" class="flex">
@@ -21,14 +27,14 @@
         <section id="timer" class="flex">
           <span id="minutes">25</span>
           <span>:</span>
-          <span:seconds>00</span:seconds>
+          <span id="seconds">00</span>
         </section>
 
         <section id="controls" class="flex">
-          <button data-action="toggleMode" class="ph ph-play-circle">
+          <button data-action="toggleRunning" class="ph ph-play-circle">
             <span class="sr-only">Play do contador</span>
           </button>
-          <button data-action="toggleMode" class="ph ph-pause-circle">
+          <button data-action="toggleRunning" class="ph ph-pause-circle">
             <span class="sr-only">Pausar o contador</span>
           </button>
           <button data-action="reset" class="ph ph-stop-circle">
@@ -45,7 +51,7 @@
       </div>
 
       <section id="wrapper-icons">
-        <button class="">
+        <button class="btn-tree">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="138"
@@ -54,6 +60,7 @@
             fill="none"
           >
             <path
+              data-action="tree"
               d="M0 24C0 10.7452 10.7452 0 24 0H114C127.255 0 138 10.7452 138 24V128C138 141.255 127.255 152 114 152H24C10.7452 152 0 141.255 0 128V24Z"
               fill="#E1E1E6"
             />
@@ -64,7 +71,7 @@
           </svg>
         </button>
 
-        <button class="">
+        <button class="btn-rain">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="138"
@@ -73,6 +80,7 @@
             fill="none"
           >
             <path
+              data-action="rain"
               d="M0 24C0 10.7452 10.7452 0 24 0H114C127.255 0 138 10.7452 138 24V128C138 141.255 127.255 152 114 152H24C10.7452 152 0 141.255 0 128V24Z"
               fill="#02799D"
             />
@@ -83,7 +91,7 @@
           </svg>
         </button>
 
-        <button class="">
+        <button class="btn-coffe">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="138"
@@ -92,6 +100,7 @@
             fill="none"
           >
             <path
+              data-action="coffe"
               d="M0 24C0 10.7452 10.7452 0 24 0H114C127.255 0 138 10.7452 138 24V128C138 141.255 127.255 152 114 152H24C10.7452 152 0 141.255 0 128V24Z"
               fill="#E1E1E6"
             />
@@ -102,7 +111,7 @@
           </svg>
         </button>
 
-        <button class="">
+        <button class="btn-fire">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="138"
@@ -111,6 +120,7 @@
             fill="none"
           >
             <path
+              data-action="fire"
               d="M0 24C0 10.7452 10.7452 0 24 0H114C127.255 0 138 10.7452 138 24V128C138 141.255 127.255 152 114 152H24C10.7452 152 0 141.255 0 128V24Z"
               fill="#E1E1E6"
             />
@@ -122,6 +132,5 @@
         </button>
       </section>
     </main>
-    >>>>>>> 8b6bf2246779fd8f4b630411d64c20e65ab6800d
   </body>
 </html>
