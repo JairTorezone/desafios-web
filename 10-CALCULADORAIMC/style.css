@@ -12,6 +12,7 @@
     --bg-color-primary: #040924;
     --bg-color-secondary: #fff;
     --bg-color-error:#F03E3E;
+    --bg-color-modal: rgba(0, 0, 0, 0.70);
     --bg-color-inpput: #DCE2E9;
     --bg-color-button: #02799D;
     --bg-color-button-hover: #2183a1;
@@ -71,7 +72,7 @@ input::placeholder{
     font-weight: 400;
     line-height: 20px;
 }
-button{
+form button{
     width: 100%;
     background-color: var(--bg-color-button);
     color: var(--text-color-white);
@@ -86,11 +87,13 @@ button{
     justify-content: center;
     gap: .8rem;
 
+    margin-top: 3.2rem;
+
     cursor: pointer;   
 
 }
 
-button:hover{
+form button:hover{
     background-color: var(--bg-color-button-hover);
 }
 
@@ -100,7 +103,7 @@ button:hover{
     display: grid;
     place-content: center;
 }
-.container .card{
+.card{
     max-width: 42.8rem;
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
 
@@ -125,6 +128,41 @@ form h1{
 
 }
 
-button{
-    margin-top: 3.2rem;
-}
+/******************************************style modal */
+
+.modal-wrapper {
+    background: var(--bg-color-modal);
+    position: absolute;
+    inset: 0;
+  
+    display: grid;
+    place-content: center;
+  
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .modal-wrapper.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal {
+    position: relative;
+    
+  }
+  .modal button {
+    background: none;
+   
+    border: 0;
+    cursor: pointer;
+  
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+  
+    transition: transform 0.3s;
+  }
+  .modal button:hover {
+    transform: scale(1.1);
+  }
